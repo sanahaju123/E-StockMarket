@@ -23,26 +23,31 @@ namespace E_StockMarket.BusinessLayer.Services
 
         public async Task<StockPrice> FindStockPriceById(long stockPriceId)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<StockPrice>> GetStockPriceIndex(long componyCode, DateTime startDate, DateTime endDate)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<StockPrice>> ListAllStockPrices()
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<StockPrice> Register(StockPrice stockPrice)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<StockPrice> UpdateStockPrice(RegisterStockPriceViewModel model)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
     }

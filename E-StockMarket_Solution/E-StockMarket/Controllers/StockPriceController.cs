@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace E_StockMarket.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class StockPriceController : ControllerBase
     {

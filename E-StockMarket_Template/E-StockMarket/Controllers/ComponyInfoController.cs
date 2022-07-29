@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace E_StockMarket.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class ComponyInfoController : ControllerBase
     {
@@ -34,6 +33,7 @@ namespace E_StockMarket.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterComponyInfoViewModel model)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -47,6 +47,7 @@ namespace E_StockMarket.Controllers
         [Route("compony/deleteCompony/{componyCode}")]
         public async Task<IActionResult> DeleteComponyInfo(long componyCode)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -59,6 +60,7 @@ namespace E_StockMarket.Controllers
         [Route("compony/getComponyInfoById/{componyCode}")]
         public async Task<IActionResult> GetComponyInfoById(long componyCode)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -70,6 +72,7 @@ namespace E_StockMarket.Controllers
         [Route("compony/getAllCompanies")]
         public async Task<IEnumerable<ComponyInfo>> ListAllComponies()
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
         #endregion

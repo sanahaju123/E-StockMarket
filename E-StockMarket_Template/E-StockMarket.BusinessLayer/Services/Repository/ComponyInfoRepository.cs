@@ -19,21 +19,25 @@ namespace E_StockMarket.BusinessLayer.Services.Repository
 
         public async Task<ComponyInfo> FindComponyInfoById(long componyCode)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<ComponyInfo>> ListAllComponyInfos()
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<ComponyInfo> Register(ComponyInfo componyInfo)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
         public async Task<ComponyInfo> UpdateComponyInfo(RegisterComponyInfoViewModel model)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
     }

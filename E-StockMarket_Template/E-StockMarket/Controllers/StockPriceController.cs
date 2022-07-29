@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace E_StockMarket.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class StockPriceController : ControllerBase
     {
@@ -34,6 +33,7 @@ namespace E_StockMarket.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterStockPriceViewModel model)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
 
         }
@@ -48,6 +48,7 @@ namespace E_StockMarket.Controllers
         [Route("stock/deleteStock/{componyCode}")]
         public async Task<IActionResult> DeleteStockPrice(long componyCode)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -60,6 +61,7 @@ namespace E_StockMarket.Controllers
         [Route("/stock/getStockByCompanyCode/{componyCode}")]
         public async Task<IActionResult> GetStockByCompanyCode(long componyCode)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -71,6 +73,7 @@ namespace E_StockMarket.Controllers
         [Route("stock/getAllStock")]
         public async Task<IEnumerable<StockPrice>> ListAllStocks()
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
 
@@ -86,6 +89,7 @@ namespace E_StockMarket.Controllers
         [Route("stock/getStockPriceIndex/{componyCode}/{startDate}/{endDate}")]
         public async Task<IEnumerable<StockPrice>> GetStockPriceIndex(long componyCode,DateTime startDate,DateTime endDate)
         {
+            //Write Your Code Here
             throw new NotImplementedException();
         }
         #endregion
