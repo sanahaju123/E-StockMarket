@@ -28,7 +28,7 @@ namespace E_StockMarket.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("/company/addCompany")]
+        [Route("company/addCompany")]
         [AllowAnonymous]
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterComponyInfoViewModel model)
