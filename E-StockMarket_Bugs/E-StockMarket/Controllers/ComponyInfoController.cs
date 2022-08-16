@@ -28,7 +28,7 @@ namespace E_StockMarket.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("compony/addCompony")]
+        [Route("company/addCompany")]
         [AllowAnonymous]
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterComponyInfoViewModel model)
@@ -63,7 +63,7 @@ namespace E_StockMarket.Controllers
         /// <param name="componyCode"></param>
         /// <returns></returns>
         [HttpDelete]
-        [Route("compony/deleteCompony/{componyCode}")]
+        [Route("company/deleteCompany/{companyCode}")]
         public async Task<IActionResult> DeleteComponyInfo(long componyCode)
         {
             var componyExists = await _componyInfoServices.FindComponyInfoById(componyCode);
@@ -94,7 +94,7 @@ namespace E_StockMarket.Controllers
         /// <param name="componyCode"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("compony/getComponyInfoById/{componyCode}")]
+        [Route("company/getCompanyInfoById/{companyCode}")]
         public async Task<IActionResult> GetComponyInfoById(long componyCode)
         {
             var componyExists = await _componyInfoServices.FindComponyInfoById(componyCode);
@@ -114,7 +114,7 @@ namespace E_StockMarket.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("compony/getAllCompanies")]
+        [Route("company/getAllCompanies")]
         public async Task<IEnumerable<ComponyInfo>> ListAllComponies()
         {
             return await _componyInfoServices.ListAllComponyInfos();
