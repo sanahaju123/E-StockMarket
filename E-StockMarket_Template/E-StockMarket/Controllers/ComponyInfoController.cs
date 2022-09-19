@@ -28,7 +28,7 @@ namespace E_StockMarket.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("compony/addCompony")]
+        [Route("company/addCompany")]
         [AllowAnonymous]
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterComponyInfoViewModel model)
@@ -44,7 +44,7 @@ namespace E_StockMarket.Controllers
         /// <param name="componyCode"></param>
         /// <returns></returns>
         [HttpDelete]
-        [Route("compony/deleteCompony/{componyCode}")]
+        [Route("company/deleteCompany/{companyCode}")]
         public async Task<IActionResult> DeleteComponyInfo(long componyCode)
         {
             //Write Your Code Here
@@ -69,7 +69,7 @@ namespace E_StockMarket.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("compony/getAllCompanies")]
+        [Route("company/getAllCompanies")]
         public async Task<IEnumerable<ComponyInfo>> ListAllComponies()
         {
             //Write Your Code Here
