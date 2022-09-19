@@ -10,8 +10,6 @@ namespace E_StockMarket.Entities
 {
     public class ComponyInfo
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long ComponyCode { get; set; }
         public string Name { get; set; }
         public string CEO { get; set; }

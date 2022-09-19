@@ -10,7 +10,6 @@ namespace E_StockMarket.BusinessLayer.ViewModels
 {
     public class RegisterStockPriceViewModel
     {
-        [Key]
         public long Id { get; set; }
         public long ComponyCode { get; set; }
         public double CurrentStockPrice { get; set; }

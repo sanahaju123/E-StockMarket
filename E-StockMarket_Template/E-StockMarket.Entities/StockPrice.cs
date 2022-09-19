@@ -10,8 +10,6 @@ namespace E_StockMarket.Entities
 {
     public class StockPrice
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public long ComponyCode { get; set; }
         public double CurrentStockPrice { get; set; }
